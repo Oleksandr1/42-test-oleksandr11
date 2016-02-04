@@ -17,9 +17,7 @@ class MyData(models.Model):
     verbose_name='Data of Birth',
     null=True)
 
-    email = models.CharField(
-    max_length=256,
-    blank=False,
+    email = models.CharField(max_length=256, blank=False,
     verbose_name='E-mail')
 
     skype = models.CharField(
