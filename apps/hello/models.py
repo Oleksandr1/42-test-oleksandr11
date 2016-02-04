@@ -14,7 +14,7 @@ class MyData(models.Model):
                                  blank=False,
                                  verbose_name="Surname")
 
-    birthday  = models.DateField(
+    birthday = models.DateField(
                                  blank=False,
                                  verbose_name='Data of Birth',
                                  null=True)
