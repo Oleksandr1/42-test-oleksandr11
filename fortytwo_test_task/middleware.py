@@ -1,4 +1,6 @@
 from hello.models import RequestHistory
+
+
 class HistoryMiddleware(object):
     def process_request(self, request):
         h = RequestHistory()
