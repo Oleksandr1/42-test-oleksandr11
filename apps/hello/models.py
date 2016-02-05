@@ -53,4 +53,3 @@ class RequestHistory(models.Model):
     get = models.TextField(
                             blank=False,
                             verbose_name='POST')
-    
