@@ -1,19 +1,6 @@
 {% extends "base.html" %}
 
 {% block title %} 42-test-oleksandr11 {% endblock title %}
-{% block extra_head %}
-
-<style type="text/css">
-.multiline{
-  width: 200px;
-  background: #ccc;
-  padding: 5px;
-  padding-right: 20px;
-  border: solid 1px black;
-}
-</style>
-{% endblock extra_head %}
-
 {% block content %}
 <h3>42 Coffee Cups Test Assigment</h3>
 <table>
@@ -26,7 +13,7 @@
     <td>{{ my_data.email }}</td>
   </tr>
   <tr>
-    <td>07/11/1986</td>
+    <td>{{ my_data.birthday }}</td>
     <td>{{ my_data.jabber }}<br>{{ me_data.skype }}</td>
   </tr>
   <tr>
@@ -38,4 +25,6 @@
     <td class ="multiline">{{ my_data.other_contacts }}</td>
   </tr>
 </table>
+<hr>
+<a href="{% url "requests" %}">requests<a>
 {% endblock content %}

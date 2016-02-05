@@ -11,4 +11,5 @@ urlpatterns = patterns(
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'hello.views.main_page', name='home'),
+    url(r'^requests/$', 'hello.views.show_requests', name='requests')
 )
