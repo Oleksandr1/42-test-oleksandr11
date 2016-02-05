@@ -3,5 +3,11 @@
 {% block title %} Requests {% endblock title %}
 
 {% block content %}
-<h4> request out </h4>
+  <h4> Request: </h4>
+  <ol>
+    {% for req in requests %}
+      <li>{{ req.url }}___{{req.get}}__{{req.post}}</li>
+      {% endfor %}
+  </ol>
+
 {% endblock content %}

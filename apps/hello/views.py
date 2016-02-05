@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import MyData
+from .models import MyData, RequestHistory
 # Create your views here.
 
 
@@ -9,4 +9,5 @@ def main_page(request):
 
 
 def show_requests(request):
-    return render(request, 'hello/requests.html', {})
+    requests = RequestHistory.objects.all()
+    return render(request, 'hello/requests.html', {'requests': requests})

@@ -40,3 +40,17 @@ class MyData(models.Model):
     other_contacts = models.TextField(
                                       blank=True,
                                       verbose_name='other contacts')
+
+
+class RequestHistory(models.Model):
+    request_url = models.CharField(
+                                   max_length=256,
+                                   blank=False,
+                                   verbose_name="URL")
+    post = models.TextField(
+                            blank=False,
+                            verbose_name='POST')
+    get = models.TextField(
+                            blank=False,
+                            verbose_name='POST')
+    
