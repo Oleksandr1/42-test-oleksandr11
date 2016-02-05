@@ -6,7 +6,7 @@
   <h4> Request: </h4>
   <ol>
     {% for req in requests %}
-      <li>{{ req.url }}___{{req.get}}__{{req.post}}</li>
+      <li>URL: {{ req.url }}_GET:__{{req.get}}_POST:__{{req.post}}_META:{{ req.meta }}</li>
       {% endfor %}
   </ol>
 

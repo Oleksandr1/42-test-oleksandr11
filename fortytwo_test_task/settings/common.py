@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'middleware.HistoryMiddleware',
+    'fortytwo_test_task.middleware.HistoryMiddleware',
 )
 
 ROOT_URLCONF = 'fortytwo_test_task.urls'
