@@ -53,3 +53,7 @@ class RequestHistory(models.Model):
     get = models.TextField(
                             blank=False,
                             verbose_name='POST')
+    meta = models.CharField(
+                                   max_length=256,
+                                   blank=False,
+                                   verbose_name="META")
