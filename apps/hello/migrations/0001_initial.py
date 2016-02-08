@@ -28,8 +28,7 @@ class Migration(SchemaMigration):
             ('request_url', self.gf('django.db.models.fields.CharField')(max_length=256)),
             ('post', self.gf('django.db.models.fields.TextField')()),
             ('get', self.gf('django.db.models.fields.TextField')()),
-            ('meta', self.gf('django.db.models.fields.CharField')(max_length=256, blank=True)),
-            ('s', self.gf('django.db.models.fields.CharField')(max_length=256, blank=True)),
+            ('meta', self.gf('django.db.models.fields.CharField')(max_length=256, null=True, blank=True)),
         ))
         db.send_create_signal(u'hello', ['RequestHistory'])
 
@@ -59,10 +58,9 @@ class Migration(SchemaMigration):
             'Meta': {'object_name': 'RequestHistory'},
             'get': ('django.db.models.fields.TextField', [], {}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'meta': ('django.db.models.fields.CharField', [], {'max_length': '256', 'blank': 'True'}),
+            'meta': ('django.db.models.fields.CharField', [], {'max_length': '256', 'null': 'True', 'blank': 'True'}),
             'post': ('django.db.models.fields.TextField', [], {}),
-            'request_url': ('django.db.models.fields.CharField', [], {'max_length': '256'}),
-            's': ('django.db.models.fields.CharField', [], {'max_length': '256', 'blank': 'True'})
+            'request_url': ('django.db.models.fields.CharField', [], {'max_length': '256'})
         }
     }
 
