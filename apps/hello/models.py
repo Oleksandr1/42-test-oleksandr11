@@ -55,6 +55,5 @@ class RequestHistory(models.Model):
                             verbose_name='POST')
     meta = models.CharField(
                             max_length=256,
-                            blank=True,
-                            null=True,
-                            verbose_name="URL")
+                            blank=False,
+                            verbose_name="Meta")
