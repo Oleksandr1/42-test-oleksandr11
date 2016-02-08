@@ -57,4 +57,3 @@ class RequestHistory(models.Model):
                             max_length=256,
                             blank=True,
                             verbose_name="URL")
-    s = models.CharField(max_length=256, blank=True, verbose_name='something')
